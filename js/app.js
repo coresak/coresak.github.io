@@ -7,8 +7,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
         Stickyfill.forceSticky()
         Stickyfill.add(document.querySelectorAll('[data-sticky]'));
+    };
+
+
+    let wHeight = $(window).height();
+
+    if (wHeight < 681 && $(window).width() < 768) {
+        function scroll() {
+            $('.container__clicker').click(function () {
+
+                $('html, body').stop().animate({
+                    scrollTop: $($(this).attr('href')).offset().top - 70
+                }, 600);
+
+                return false;
+            });
+        }
+
+        scroll();
+    } else  {
+        //
     }
-    ;
+
+    if (wHeight < 599 && $(window).width() > 768) {
+        function scroll() {
+            $('.container__clicker').click(function () {
+
+                $('html, body').stop().animate({
+                    scrollTop: $($(this).attr('href')).offset().top + 190
+                }, 600);
+
+                return false;
+            });
+        }
+
+        scroll();
+    } else  {
+        //
+    }
+
 
     AOS.init({
         duration: 1200,
