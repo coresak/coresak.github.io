@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             $('html, body').stop().animate({
                 scrollTop: $($(this).attr('href')).offset().top
-            }, 300);
+            }, 600);
 
             return false;
         });
