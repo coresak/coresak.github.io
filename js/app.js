@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             $('.container__clicker').click(function () {
 
                 $('html, body').stop().animate({
-                    scrollTop: $($(this).attr('href')).offset().top + 65
+                    scrollTop: $($(this).attr('href')).offset().top + 50
                 }, 600);
 
                 return false;
