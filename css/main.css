@@ -126,6 +126,7 @@ section.one img:nth-child(5) {
 section.one img:nth-child(6) {
   right: 0;
   bottom: 100px;
+  z-index: 4;
 }
 section.one img:nth-child(7) {
   right: 0;
