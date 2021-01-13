@@ -1,1 +1,1 @@
-$(document).ready((function(){AOS.init({offset:120,delay:100,duration:600,easing:"ease-in-out-cubic",once:!1,mirror:!0,anchorPlacement:"top-bottom"})}));
+$(document).ready((function(){AOS.init({offset:120,delay:100,duration:500,easing:"ease",once:!0,mirror:!1,anchorPlacement:"top"})}));
