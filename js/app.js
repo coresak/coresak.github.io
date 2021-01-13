@@ -1,1 +1,1 @@
-$(document).ready((function(){AOS.init({offset:120,delay:100,duration:500,easing:"ease",once:!0,mirror:!1,anchorPlacement:"top"})}));
+$(document).ready((function(){AOS.init({offset:120,delay:100,duration:500,easing:"ease",once:!0,mirror:!1,anchorPlacement:"top"}),$("#line-bar").resizer((function(){var e=$(this);console.log(e.width(),e.height())})),$("#line-bar").resizer("unbind",handler)}));
