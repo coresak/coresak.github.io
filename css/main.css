@@ -1430,6 +1430,10 @@ section.six h4 {
     bottom: 100px;
   }
 
+  section.eight img.d {
+    display: block !important;
+  }
+
   section.eight .bottom__wrapper .popup.two {
     right: 84px;
     top: 350px;
@@ -1507,6 +1511,7 @@ section.six h4 {
 
   section.six .container__wrapper-item:nth-child(2) .graphic-label {
     margin-top: 120%;
+    display: none;
   }
 
   section.eight .graphic-item-background {
@@ -1518,6 +1523,11 @@ section.six h4 {
     display: none !important;
   }
 
+  .m-svg-2,
+img.m-svg.sx {
+    display: none !important;
+  }
+
   .graphic-item__wrapper-item div.name {
     display: inline-block !important;
     flex: none;
@@ -1525,6 +1535,18 @@ section.six h4 {
   }
 }
 @media (max-width: 768px) {
+  img.m-svg {
+    display: none !important;
+  }
+
+  img.m-svg.sx {
+    display: none !important;
+  }
+
+  section.four .container__wrapper-item:nth-child(1) {
+    width: 100% !important;
+  }
+
   .back-2m.m-svg {
     display: none !important;
   }
@@ -1579,6 +1601,10 @@ section.one .back-2m.m-svg {
     display: none;
   }
 
+  section.eight .container__wrapper {
+    flex-direction: column;
+  }
+
   section.eight .m-svg {
     margin-top: 100px;
   }
@@ -1587,8 +1613,24 @@ section.one .back-2m.m-svg {
     position: initial;
   }
 
+  .m-svg-2.map,
+.m-svg-2.popup {
+    display: block;
+    object-fit: cover;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+
+  section.eight .container__wrapper-item {
+    width: 100% !important;
+  }
+  section.eight .container__wrapper-item p {
+    max-width: 100%;
+  }
+
   section.eight h4 {
-    width: 50%;
+    width: 100%;
     margin-left: 24px;
   }
   section.eight h4 br {
@@ -1826,6 +1868,9 @@ section.six .graphic-item::after {
 
   section.three .container__wrapper, section.five .container__wrapper, section.seven .container__wrapper, section.nine .container__wrapper {
     flex-direction: column-reverse;
+    position: relative;
+    z-index: 5;
+    padding: 60px 24px;
   }
 
   section.three .container__wrapper-item p, section.five .container__wrapper-item p, section.seven .container__wrapper-item p, section.nine .container__wrapper-item p {
@@ -1882,7 +1927,7 @@ section.four .container__wrapper-item:nth-child(2), section.ten .container__wrap
   }
 
   section.three, section.five, section.seven, section.nine {
-    padding: 40px 0;
+    padding: 0 0;
   }
 
   section.six .container__wrapper-item:nth-child(2),
@@ -1903,6 +1948,7 @@ section.six .container__wrapper-item:nth-child(2) p {
 
   section.six h4 {
     margin: 0 !important;
+    padding: 0 24px;
     margin-bottom: 16px !important;
   }
 
@@ -1912,5 +1958,142 @@ section.six .container__wrapper-item:nth-child(2) p {
 
   section.ten h4 {
     width: 100%;
+  }
+
+  section.six .container__wrapper-item:nth-child(2) p:after {
+    content: "";
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    left: 0;
+    top: -15px;
+    background-image: url("data:image/svg+xml,%3Csvg width='172' height='172' viewBox='0 0 172 172' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect opacity='0.1' width='172' height='172' fill='%23E21A1A'/%3E%3C/svg%3E%0A");
+    transition: 0.3s;
+    overflow: visible;
+    z-index: 5;
+  }
+
+  section.six .container__wrapper {
+    padding: 0;
+  }
+  section.six .container__wrapper-item {
+    padding: 0 24px;
+  }
+  section.six .container__wrapper-item.graphic-item {
+    padding: 0;
+  }
+  section.six .container__wrapper-item.graphic-item p {
+    padding: 0 24px;
+  }
+  section.six .container__wrapper.bottom__wrapper {
+    flex-direction: column-reverse !important;
+  }
+  section.six .container__wrapper.bottom__wrapper h4 {
+    padding: 0 !important;
+  }
+  section.six img.m-svg {
+    display: none !important;
+  }
+  section.six .m-svg-2 {
+    position: relative;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  section.six .container__wrapper-item:nth-child(2) {
+    overflow: visible;
+  }
+
+  section.two .container__wrapper p, section.four .container__wrapper p, section.six .container__wrapper p, section.eight .container__wrapper p, section.ten .container__wrapper p {
+    margin-bottom: 16px;
+  }
+
+  section.eight {
+    padding: 40px 0;
+  }
+  section.eight p, section.eight h4 {
+    padding: 0 24px;
+  }
+  section.eight .container__wrapper {
+    padding: 0;
+    margin-top: 15px;
+  }
+  section.eight .m-svg-2 {
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+  section.eight .m-svg-2.map {
+    width: 95%;
+  }
+  section.eight h4 {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  section.two .container__wrapper p, section.four .container__wrapper p, section.six .container__wrapper p, section.eight .container__wrapper p, section.ten .container__wrapper p {
+    font-size: 14px !important;
+  }
+
+  .m-svg-2 {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  section.eight .graphic-item-background {
+    display: none;
+  }
+
+  .text-s {
+    position: relative;
+    font-size: 16px !important;
+  }
+
+  .text-s:after {
+    content: "";
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    left: -25px;
+    top: -15px;
+    background-image: url("data:image/svg+xml,%3Csvg width='172' height='172' viewBox='0 0 172 172' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect opacity='0.1' width='172' height='172' fill='%23E21A1A'/%3E%3C/svg%3E%0A");
+    transition: 0.3s;
+    overflow: visible;
+    z-index: 5;
+  }
+
+  footer {
+    padding: 20px 50px;
+    flex-direction: column-reverse;
+  }
+  footer a {
+    width: 100%;
+  }
+  footer .bottom__title {
+    display: block;
+    width: 100%;
+    text-align: left;
+    font-size: 12px;
+  }
+  footer .bottom__social,
+footer .bottom__logos {
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+    order: 5;
+    margin-bottom: 30px;
+  }
+  footer .bottom__social a,
+footer .bottom__logos a {
+    width: auto;
+  }
+  footer .bottom__social svg,
+footer .bottom__logos svg {
+    margin: auto;
+  }
+  footer .bottom__logos {
+    order: 3;
   }
 }
