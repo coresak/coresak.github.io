@@ -41,6 +41,49 @@
   width: 1440px;
 }
 
+.header__list {
+  position: absolute;
+  top: calc(100% - 10px);
+  left: calc(100% - 10px);
+  width: 240px;
+  max-width: calc(100vw - 130px);
+  padding: 18px 25px 25px;
+  padding-left: 15px;
+  background: #fff;
+  box-shadow: -1px -1px 0 #fff, 0 9px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s;
+  z-index: 99;
+}
+
+.header__list.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header__subtitle:not(:first-child) {
+  margin-top: 26px;
+}
+
+.header__subtitle {
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  font-weight: 300;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  color: #e21a1a;
+  border-bottom: 1px solid #e3e5ea;
+}
+
+.header__item {
+  margin-top: 14px;
+}
+.header__item a {
+  color: #222222;
+}
+
 body {
   overflow-x: hidden;
   background-color: var(--background-color);
@@ -48,6 +91,7 @@ body {
 }
 
 header nav {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -62,9 +106,9 @@ header nav .nav__dots-btn svg {
   fill: #E21A1A;
 }
 header nav .nav__home-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  flex: none;
+  position: relative;
   cursor: pointer;
   width: 48px;
   height: 48px;
@@ -74,10 +118,18 @@ header nav .nav__home-btn {
   margin-right: 19px;
   transition: 0.3s;
 }
+header nav .nav__home-btn svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
 header nav .nav__dots-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  flex: none;
+  position: relative;
   cursor: pointer;
   width: 48px;
   height: 48px;
@@ -87,6 +139,20 @@ header nav .nav__dots-btn {
   margin-left: 0;
   margin-right: auto;
   transition: 0.3s;
+}
+header nav .nav__dots-btn svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+header nav .nav__dots-btn.open {
+  background-color: #E21A1A;
+}
+header nav .nav__dots-btn.open svg {
+  fill: #FFFFFF;
 }
 header nav .nav__home-btn:hover,
 header nav .nav__dots-btn:hover {
