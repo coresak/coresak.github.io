@@ -97,6 +97,7 @@ header nav {
   justify-content: space-around;
   padding: 40px;
   height: auto;
+  z-index: 98;
 }
 header nav svg {
   cursor: pointer;
