@@ -41,6 +41,11 @@
   width: 1440px;
 }
 
+.btn__block {
+  display: flex;
+  margin-right: auto;
+}
+
 .header__list {
   position: absolute;
   top: calc(100% - 10px);
@@ -94,7 +99,7 @@ header nav {
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 40px;
   height: auto;
   z-index: 98;
@@ -164,7 +169,7 @@ header nav .nav__dots-btn:hover svg {
   fill: #FFFFFF;
 }
 header nav .nav__svg:last-child {
-  margin-left: 47px;
+  margin-left: 46px;
 }
 
 .container {
@@ -1747,6 +1752,10 @@ section.six .graphic-item::after {
   }
 }
 @media (max-width: 450px) {
+  .btn__block {
+    width: 100%;
+  }
+
   header nav {
     padding: 21px;
     flex-wrap: wrap;
@@ -1754,7 +1763,7 @@ section.six .graphic-item::after {
   }
 
   header nav .nav__dots-btn {
-    margin-right: 55%;
+    right: auto;
     margin-left: 0;
   }
 
