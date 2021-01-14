@@ -35,6 +35,9 @@
   color: #E21A1A;
   text-decoration: none !important;
 }
+:root .name {
+  color: #E21A1A;
+}
 
 .main__wrapper {
   margin: auto;
@@ -365,6 +368,7 @@ section.ten .container__wrapper-item:nth-child(2) {
 }
 section.four .container__wrapper-item:nth-child(2) p,
 section.ten .container__wrapper-item:nth-child(2) p {
+  font-weight: 300 !important;
   max-width: 620px;
 }
 section.four h4,
@@ -726,9 +730,9 @@ section.six .container__wrapper-item:nth-child(2) .loco {
   position: absolute;
   object-fit: cover;
   display: block;
-  top: 730px;
+  top: 400px;
   right: -330px;
-  z-index: 2;
+  z-index: 4;
 }
 section.six .container__wrapper-item:nth-child(2) .graphic-label {
   display: block;
@@ -1276,7 +1280,7 @@ section.six h4 {
   }
 
   section.six .container__wrapper-item:nth-child(2) .graphic-label {
-    margin-top: 110%;
+    display: none;
   }
 
   section.eight .bottom__wrapper p {
@@ -1523,8 +1527,14 @@ section.six h4 {
     display: none !important;
   }
 
-  .m-svg-2,
-img.m-svg.sx {
+  .map__container img.m-svg {
+    display: none !important;
+  }
+  .map__container img.d {
+    display: block !important;
+  }
+
+  .m-svg-2 {
     display: none !important;
   }
 
@@ -1535,10 +1545,6 @@ img.m-svg.sx {
   }
 }
 @media (max-width: 768px) {
-  img.m-svg {
-    display: none !important;
-  }
-
   img.m-svg.sx {
     display: none !important;
   }
@@ -1794,6 +1800,17 @@ section.six .graphic-item::after {
   }
 }
 @media (max-width: 450px) {
+  #progress--container .container__wrapper {
+    flex-direction: column-reverse;
+  }
+  #progress--container .reverse {
+    margin-bottom: 45px;
+  }
+
+  section.three .container__wrapper-item:nth-child(1) h5 br, section.three .container__wrapper-item:nth-child(1) p br, section.five .container__wrapper-item:nth-child(1) h5 br, section.five .container__wrapper-item:nth-child(1) p br, section.seven .container__wrapper-item:nth-child(1) h5 br, section.seven .container__wrapper-item:nth-child(1) p br, section.nine .container__wrapper-item:nth-child(1) h5 br, section.nine .container__wrapper-item:nth-child(1) p br {
+    display: none;
+  }
+
   .btn__block {
     width: 100%;
   }
@@ -2034,6 +2051,7 @@ section.six .container__wrapper-item:nth-child(2) p {
 
   section.two .container__wrapper p, section.four .container__wrapper p, section.six .container__wrapper p, section.eight .container__wrapper p, section.ten .container__wrapper p {
     font-size: 14px !important;
+    line-height: 180% !important;
   }
 
   .m-svg-2 {
