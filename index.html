@@ -51,20 +51,23 @@
         <h4>Экологичный транспорт</h4>
         <div class="container__wrapper">
           <div class="container__wrapper-item">
-            <p>Поезда считаются наиболее бережным к&nbsp;природе видом транспорта. На&nbsp;железнодорожный транспорт приходится&nbsp;7% мировых грузоперевозок, но&nbsp;только&nbsp;3% энергии, используемой мировой транспортной отраслью, и&nbsp;менее&nbsp;1% выбросов загрязняющих веществ.</p>
+            <p>Поезда считаются наиболее бережным к&nbsp;природе видом транспорта. На&nbsp;железнодорожный транспорт приходится<span class="colortext"><br> 7%&nbsp;мировых грузоперевозок</span>, но&nbsp;только&nbsp;3% энергии, используемой мировой транспортной отраслью, и&nbsp;<span class="colortext"><br> менее&nbsp;1%&nbsp;</span>выбросов загрязняющих веществ.</p>
             <p>Исследования РЖД в&nbsp;России показывают аналогичную картину. Железные дороги обеспечивают 23,4% пассажирских и&nbsp;87,2% грузовых перевозок в&nbsp;стране. При этом на&nbsp;долю РЖД приходится менее&nbsp;1% общего объема парниковых выбросов от&nbsp;всех видов транспорта. И&nbsp;с&nbsp;каждым годом российские железные дороги становятся еще экологичнее.</p>
           </div>
           <div class="container__wrapper-item graphic-item">
             <p>Выбросы углекислого газа при перевозке одного и&nbsp;того&nbsp;же груза поездами и&nbsp;другими видами транспорта</p>
-            <div class="graphic-item__wrapper">
+            <div class="graphic-item__wrapper" id="line-graphs">
               <div class="graphic-item__wrapper-item"><span>поезд</span><span class="graphic--bar">
                   <div class="progress--bar" id="line-bar"></div></span></div>
               <div class="graphic-item__wrapper-item"><span>корабль</span><span class="graphic--bar">
-                  <div class="progress--bar" id="line-bar-2"></div></span><span id="result">× 5</span></div>
+                  <div class="progress--bar" id="line-bar-2" data-aos="bar1" data-aos-duration="1000"></div></span><span>×
+                  <div class="counter">5</div></span></div>
               <div class="graphic-item__wrapper-item"><span>фура</span><span class="graphic--bar">
-                  <div class="progress--bar" id="line-bar-3"></div></span><span>× 89</span></div>
+                  <div class="progress--bar" id="line-bar-3" data-aos="bar2" data-aos-duration="1000"></div></span><span>×
+                  <div class="counter">89</div></span></div>
               <div class="graphic-item__wrapper-item"><span>самолет</span><span class="graphic--bar">
-                  <div class="progress--bar" id="line-bar-4"></div></span><span>× 528</span></div>
+                  <div class="progress--bar" id="line-bar-4" data-aos="bar3" data-aos-duration="1000"></div></span><span>×
+                  <div class="counter">528</div></span></div>
             </div><span class="graphic-label">Источник: Eurasian Rail Alliance Index</span>
           </div>
         </div>
@@ -92,31 +95,43 @@
           <div class="container__wrapper-item graphic-item">
             <p>Снижение загрязнений от&nbsp;деятельности РЖД <br> в&nbsp;2007&ndash;2019 годах</p>
             <div class="graphic-item__wrapper">
-              <div class="graphic-item__wrapper-item"><span>В 2,8 <br> раза <br> ниже</span>
+              <div class="graphic-item__wrapper-item">
+                <div style="color: #E21A1A;">
+                  <div class="count"><span>В&nbsp;</span><span class="counter">2</span><span class="tag">,</span><span class="counter">8</span></div><span>раза <br> ниже</span>
+                </div>
                 <div class="graphic--bar">
-                  <div class="progress--bar progress--bar" id="progress--bar-2"></div>
+                  <div class="progress--bar" id="progress--bar" data-aos="prog1" data-aos-duration="4000" data-aos-delay="800"></div>
                 </div><span>Загрязнения от <br> стационарных <br> источников</span>
               </div>
-              <div class="graphic-item__wrapper-item"><span>В 1,3 <br> раза <br> ниже</span>
+              <div class="graphic-item__wrapper-item">
+                <div style="color: #E21A1A;">
+                  <div class="count"><span>В&nbsp;</span><span class="counter">1</span><span class="tag">,</span><span class="counter">3</span></div><span>раза <br> ниже</span>
+                </div>
                 <div class="graphic--bar">
-                  <div class="progress--bar" id="progress--bar"></div>
+                  <div class="progress--bar" id="progress--bar-2" data-aos="prog2" data-aos-duration="4000" data-aos-delay="800"></div>
                 </div><span>Загрязнения <br> от поездов</span>
               </div>
-              <div class="graphic-item__wrapper-item"><span>В 2,1 <br> раза <br> ниже</span>
+              <div class="graphic-item__wrapper-item">
+                <div style="color: #E21A1A;">
+                  <div class="count"><span>В&nbsp;</span><span class="counter">2</span><span class="tag">,</span><span class="counter">1</span></div><span>раза <br> ниже</span>
+                </div>
                 <div class="graphic--bar">
-                  <div class="progress--bar" id="progress--bar-3"></div>
+                  <div class="progress--bar" id="progress--bar-3" data-aos="prog3" data-aos-duration="4000" data-aos-delay="800"></div>
                 </div><span>Расход <br> воды</span>
               </div>
-              <div class="graphic-item__wrapper-item"><span>В 3 <br> раза <br> ниже</span>
+              <div class="graphic-item__wrapper-item">
+                <div style="color: #E21A1A;">
+                  <div class="count"><span>В&nbsp;</span><span class="counter">3</span></div><span>раза <br> ниже</span>
+                </div>
                 <div class="graphic--bar">
-                  <div class="progress--bar" id="progress--bar-4"></div>
+                  <div class="progress--bar" id="progress--bar-4" data-aos="prog4" data-aos-duration="4000" data-aos-delay="800"></div>
                 </div><span>Сброс <br> загрязненных <br> вод</span>
               </div>
             </div><span class="graphic-label">Источник: РЖД</span>
           </div>
           <div class="container__wrapper-item">
             <p>Начиная с&nbsp;2009 года РЖД формирует экологическую стратегию и&nbsp;ставит перед собой целевые показатели по&nbsp;экологии. Системная работа дает отличные результаты: количество перевозок растет, а&nbsp;загрязнения, вызванные ими, сокращаются из&nbsp;года в&nbsp;год.</p>
-            <p>Более того, РЖД добровольно ликвидирует экологический ущерб от&nbsp;железнодорожных перевозок, накопленный с&nbsp;1930-х годов. Уже ликвидировано 270 загрязнений площадью 300&nbsp;000&nbsp;кв.&nbsp;м, осталось еще 304&nbsp;&mdash; их&nbsp;компания планирует устранить в&nbsp;ближайшее десятилетие.</p>
+            <p>Более того,&nbsp;<span class="colortext">РЖД&nbsp;</span>добровольно ликвидирует экологический ущерб от&nbsp;железнодорожных перевозок, накопленный с&nbsp;1930-х годов. Уже ликвидировано 270 загрязнений площадью 300&nbsp;000&nbsp;кв.&nbsp;м, осталось еще 304&nbsp;&mdash; их&nbsp;компания планирует устранить в&nbsp;ближайшее десятилетие.</p>
           </div>
         </div>
       </section>
@@ -181,8 +196,8 @@
           <div class="container__wrapper-item graphic-item"><img class="terrain" src="./img/rzd-eco/rzd-eco/2/scheme/terrain.svg" data-aos-delay="350" data-aos="fade-up"><img class="rail" src="./img/rzd-eco/rzd-eco/2/scheme/rail.svg" data-aos-delay="350" data-aos="fade-up"><img class="building" src="./img/rzd-eco/rzd-eco/2/scheme/building.svg" data-aos-delay="350" data-aos="fade-left"><img class="wire" src="./img/rzd-eco/rzd-eco/2/scheme/wire.svg" data-aos-delay="350" data-aos="fade-left"><img class="mountain-left" src="./img/rzd-eco/rzd-eco/2/scheme/mountain-left.svg" data-aos-delay="350" data-aos="fade-up"><img class="forest-left" src="./img/rzd-eco/rzd-eco/2/scheme/forest-left.svg" data-aos-delay="350" data-aos="fade-up"><img class="right-fade" src="./img/rzd-eco/rzd-eco/2/scheme/right-fade.svg" data-aos-delay="350" data-aos="fade-up"><img class="loco" src="./img/rzd-eco/rzd-eco/2/scheme/loco.svg" id="train-2"></div>
           <div class="container__wrapper-item">
             <h4>Деньги на экологичные проекты: <br> «зеленые» облигации</h4>
-            <p>В&nbsp;мире сегодня активно развивается &laquo;зеленое&raquo; финансирование: инвесторы целенаправленно выбирают для инвестиций экологически чистые и&nbsp;значимые проекты. От&nbsp;компании, получившей инвестиции, требуется соблюдать природоохранное законодательство, предоставлять прозрачную экологическую отчетность и&nbsp;сотрудничать с&nbsp;надзорными органами и&nbsp;общественниками.</p>
-            <p>РЖД&nbsp;&mdash; один из&nbsp;пионеров &laquo;зеленого&raquo; финансирования в&nbsp;России. В&nbsp;2020 году компания впервые в&nbsp;истории страны выпустила бессрочные &laquo;зеленые&raquo; облигации на&nbsp;100 млрд рублей. До&nbsp;этого РЖД делали и&nbsp;другие &laquo;зеленые&raquo; размещения, 74% которых выкупили зарубежные инвесторы.</p>
+            <p>В&nbsp;мире сегодня активно развивается<span class="colortext">&laquo;зеленое&raquo; финансирование:&nbsp;</span>инвесторы целенаправленно выбирают для инвестиций экологически чистые и&nbsp;значимые проекты. От&nbsp;компании, получившей инвестиции, требуется соблюдать природоохранное законодательство, предоставлять прозрачную экологическую отчетность и&nbsp;сотрудничать с&nbsp;надзорными органами и&nbsp;общественниками.</p>
+            <p>РЖД&nbsp;&mdash; один из&nbsp;пионеров &laquo;зеленого&raquo; финансирования в&nbsp;России. В&nbsp;2020 году компания&nbsp;<span class="colortext">впервые в&nbsp;истории&nbsp;</span>страны выпустила бессрочные &laquo;зеленые&raquo; облигации на&nbsp;100 млрд рублей. До&nbsp;этого РЖД делали и&nbsp;<span class="colortext">другие&nbsp;</span>&laquo;зеленые&raquo; размещения, 74% которых выкупили зарубежные инвесторы.</p>
             <p>Привлеченные таким образом средства понадобятся компании в&nbsp;том числе и&nbsp;на&nbsp;одном из&nbsp;главных современных проектов&nbsp;&mdash; реконструкции БАМа и&nbsp;Транссиба.</p>
           </div>
         </div>
@@ -248,8 +263,8 @@
           <div class="container__wrapper-item graphic-item">
             <p>Что проект даст России</p>
             <div class="graphic-item__wrapper">
-              <div class="graphic-item__wrapper-item count" data-aos-delay="350" data-aos="fade-right"><span id="count">+3%</span><span>прироста ВВП</span></div>
-              <div class="graphic-item__wrapper-item count" data-aos-delay="350" data-aos="fade-right"><span>+50%</span><span>новых инвестиционных проектов</span></div>
+              <div class="graphic-item__wrapper-item count" data-aos-delay="350" data-aos="fade-right"><span>+</span><span class="counter">3</span><span style="margin-bottom: 0; font-size: 120px !important; line-height: 145px !important;">%</span><span style="margin-bottom: 25px !important; margin-left: 13px !important;">прироста ВВП</span></div>
+              <div class="graphic-item__wrapper-item count" data-aos-delay="350" data-aos="fade-right"><span>+</span><span class="counter">50</span><span style="margin-bottom: 25px !important; margin-left: 13px !important;">новых инвестиционных проектов</span></div>
             </div>
           </div>
           <div class="container__wrapper-item">
@@ -292,13 +307,13 @@
       </footer>
       <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
       <script src="js/app.js"></script>
-      <script src="js/graphs.a.js"></script>
-      <script src="js/graphs.b.js"></script>
+      <!--script(src='js/graphs.a.js')-->
+      <!--script(src='js/graphs.b.js')-->
       <script src="js/move.train.js"></script>
       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js" integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ==" crossorigin="anonymous"></script>
-      <script src="js/jquery.resize/jquery.resize.js"></script>
+      <script src="js/waypoints/lib/jquery.waypoints.min.js"></script>
       <script src="js/dual-side-scroll/dist/scroll-progress.min.js"></script>
+      <script src="js/jquery.counterup/jquery.counterup.min.js"></script>
       <script src="js/motus/dist/motus.web.js"></script>
     </div>
   </body>
