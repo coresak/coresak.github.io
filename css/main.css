@@ -31,6 +31,10 @@
   --font-18: 18px;
   --font-16: 16px;
 }
+:root a {
+  color: #E21A1A;
+  text-decoration: none !important;
+}
 
 .main__wrapper {
   margin: auto;
@@ -38,6 +42,7 @@
 }
 
 body {
+  overflow-x: hidden;
   background-color: var(--background-color);
   font-family: "RussianRail", sans-serif;
 }
@@ -136,12 +141,12 @@ section.one img:nth-child(8) {
   z-index: 3;
 }
 section.one img:nth-child(9) {
-  left: 500px;
+  left: 34.7%;
   bottom: 150px;
 }
 section.one img:nth-child(10) {
   right: 0;
-  left: 250px;
+  left: 17.3%;
   bottom: 20px;
   z-index: 4;
 }
@@ -1085,6 +1090,17 @@ iframe.width-changed {
     overflow-x: hidden;
     width: 100%;
   }
+
+  .back-2m.m-svg {
+    width: 100%;
+    display: block !important;
+    object-fit: cover;
+    bottom: 0;
+  }
+
+  img.d {
+    display: none !important;
+  }
 }
 @media (max-width: 1366px) {
   .graphic-item-background-cloud {
@@ -1402,6 +1418,10 @@ section.six h4 {
   }
 }
 @media (max-width: 768px) {
+  .back-2m.m-svg {
+    display: none !important;
+  }
+
   section.four h4 {
     margin-left: 51% !important;
   }
@@ -1416,7 +1436,8 @@ section.six h4 {
   section.one {
     min-height: 540px;
   }
-  section.one .d {
+  section.one .d,
+section.one .back-2m.m-svg {
     display: none;
   }
 
@@ -1484,7 +1505,9 @@ section.six .graphic-item::after {
 
   .m-svg {
     display: block;
+    width: 100%;
     object-fit: cover;
+    bottom: 0;
   }
 
   .graphic-item--modal {
