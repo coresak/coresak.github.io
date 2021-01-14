@@ -1160,12 +1160,18 @@ iframe.width-changed {
 
   .back-2m.m-svg {
     width: 100%;
-    display: block !important;
+    display: none !important;
     object-fit: cover;
     bottom: 0;
   }
 }
 @media (max-width: 1366px) {
+  section.one .back {
+    width: 100%;
+    position: absolute;
+    bottom: 15px;
+  }
+
   .graphic-item-background-cloud {
     right: 230px;
   }
@@ -1202,6 +1208,13 @@ section.six h4 {
   }
 }
 @media (max-width: 1200px) {
+  .back-2m.m-svg {
+    width: 100%;
+    display: block !important;
+    object-fit: cover;
+    bottom: 0;
+  }
+
   section.two .container__wrapper-item, section.four .container__wrapper-item, section.six .container__wrapper-item, section.eight .container__wrapper-item, section.ten .container__wrapper-item {
     width: 47%;
     margin-right: 2%;
