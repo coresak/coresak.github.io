@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>iotmegafon</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -45,7 +45,7 @@
       <section class="container one" data-aos="fade-down">
         <div class="container__wrapper">
           <h1>Железные дороги <br> и&nbsp;экология</h1>
-        </div><img class="back" src="./img/rzd-eco/rzd-eco/0/eco/back.svg" data-aos-delay="350" data-aos="fade-up"><img src="./img/rzd-eco/rzd-eco/0/eco/cliff.svg" data-aos-delay="850" data-aos="fade-up"><img src="./img/rzd-eco/rzd-eco/0/eco/farForest.svg" data-aos-delay="450" data-aos="fade-down"><img src="./img/rzd-eco/rzd-eco/0/eco/rock.svg" data-aos-delay="550" data-aos="fade-left"><img src="./img/rzd-eco/rzd-eco/0/eco/forest.svg" data-aos-delay="550" data-aos="fade-left"><img src="./img/rzd-eco/rzd-eco/0/eco/treesoncliff.svg" data-aos-delay="850" data-aos="fade-up"><img src="./img/rzd-eco/rzd-eco/0/eco/ship.svg" data-aos-delay="1450" data-aos="fade-left" id="boat"><img src="./img/rzd-eco/rzd-eco/0/eco/seal.svg" data-aos-delay="1050" data-aos="fade-down" id="trigger"><img src="./img/rzd-eco/rzd-eco/0/eco/Right-fade.svg" data-aos-delay="550" data-aos="fade-left"><img src="./img/rzd-eco/rzd-eco/0/eco/Left-fade.svg" data-aos-delay="550" data-aos="fade-right">
+        </div><img class="backm m-svg" src="./img/rzd-eco/rzd-eco/0/eco/background.svg" data-aos-delay="350" data-aos="fade-up"><img class="back d" src="./img/rzd-eco/rzd-eco/0/eco/back.svg" data-aos-delay="350" data-aos="fade-up"><img class="d" src="./img/rzd-eco/rzd-eco/0/eco/cliff.svg" data-aos-delay="850" data-aos="fade-up"><img class="d" src="./img/rzd-eco/rzd-eco/0/eco/farForest.svg" data-aos-delay="450" data-aos="fade-down"><img class="d" src="./img/rzd-eco/rzd-eco/0/eco/rock.svg" data-aos-delay="550" data-aos="fade-left"><img class="d" src="./img/rzd-eco/rzd-eco/0/eco/forest.svg" data-aos-delay="550" data-aos="fade-left"><img class="d" src="./img/rzd-eco/rzd-eco/0/eco/treesoncliff.svg" data-aos-delay="850" data-aos="fade-up"><img class="d" src="./img/rzd-eco/rzd-eco/0/eco/ship.svg" data-aos-delay="1450" data-aos="fade-left" id="boat"><img class="d" src="./img/rzd-eco/rzd-eco/0/eco/seal.svg" data-aos-delay="1050" data-aos="fade-down" id="trigger"><img class="d" src="./img/rzd-eco/rzd-eco/0/eco/Right-fade.svg" data-aos-delay="550" data-aos="fade-left"><img class="d" src="./img/rzd-eco/rzd-eco/0/eco/Left-fade.svg" data-aos-delay="550" data-aos="fade-right">
       </section>
       <section class="container two" data-aos="fade-up">
         <h4>Экологичный транспорт</h4>
@@ -57,17 +57,25 @@
           <div class="container__wrapper-item graphic-item">
             <p>Выбросы углекислого газа при перевозке одного и&nbsp;того&nbsp;же груза поездами и&nbsp;другими видами транспорта</p>
             <div class="graphic-item__wrapper" id="line-graphs">
-              <div class="graphic-item__wrapper-item"><span>поезд</span><span class="graphic--bar">
-                  <div class="progress--bar" id="line-bar"></div></span></div>
-              <div class="graphic-item__wrapper-item"><span>корабль</span><span class="graphic--bar">
+              <div class="graphic-item__wrapper-item">
+                <div class="name">поезд</div><span class="graphic--bar">
+                  <div class="progress--bar" id="line-bar"></div></span>
+              </div>
+              <div class="graphic-item__wrapper-item">
+                <div class="name">корабль</div><span class="graphic--bar">
                   <div class="progress--bar" id="line-bar-2" data-aos="bar1" data-aos-duration="1000"></div></span><span>×
-                  <div class="counter">5</div></span></div>
-              <div class="graphic-item__wrapper-item"><span>фура</span><span class="graphic--bar">
+                  <div class="counter">5</div></span>
+              </div>
+              <div class="graphic-item__wrapper-item">
+                <div class="name">фура</div><span class="graphic--bar">
                   <div class="progress--bar" id="line-bar-3" data-aos="bar2" data-aos-duration="1000"></div></span><span>×
-                  <div class="counter">89</div></span></div>
-              <div class="graphic-item__wrapper-item"><span>самолет</span><span class="graphic--bar">
-                  <div class="progress--bar" id="line-bar-4" data-aos="bar3" data-aos-duration="1000"></div></span><span>×
-                  <div class="counter">528</div></span></div>
+                  <div class="counter">89</div></span>
+              </div>
+              <div class="graphic-item__wrapper-item">
+                <div class="name">самолет</div><span class="graphic--bar">
+                  <div class="progress--bar" id="line-bar-4" data-aos="bar3" data-aos-duration="1000"></div></span><span class="w"> ×
+                  <div class="counter w">528</div></span>
+              </div>
             </div><span class="graphic-label">Источник: Eurasian Rail Alliance Index</span>
           </div>
         </div>
@@ -95,37 +103,37 @@
           <div class="container__wrapper-item graphic-item">
             <p>Снижение загрязнений от&nbsp;деятельности РЖД <br> в&nbsp;2007&ndash;2019 годах</p>
             <div class="graphic-item__wrapper">
-              <div class="graphic-item__wrapper-item">
+              <div class="graphic-item__wrapper-item counter__wrapper">
                 <div style="color: #E21A1A;">
                   <div class="count"><span>В&nbsp;</span><span class="counter">2</span><span class="tag">,</span><span class="counter">8</span></div><span>раза <br> ниже</span>
                 </div>
                 <div class="graphic--bar">
                   <div class="progress--bar" id="progress--bar" data-aos="prog1" data-aos-duration="4000" data-aos-delay="800"></div>
-                </div><span>Загрязнения от <br> стационарных <br> источников</span>
+                </div><span class="counter__label">Загрязнения от <br> стационарных <br> источников</span>
               </div>
-              <div class="graphic-item__wrapper-item">
+              <div class="graphic-item__wrapper-item counter__wrapper">
                 <div style="color: #E21A1A;">
                   <div class="count"><span>В&nbsp;</span><span class="counter">1</span><span class="tag">,</span><span class="counter">3</span></div><span>раза <br> ниже</span>
                 </div>
                 <div class="graphic--bar">
                   <div class="progress--bar" id="progress--bar-2" data-aos="prog2" data-aos-duration="4000" data-aos-delay="800"></div>
-                </div><span>Загрязнения <br> от поездов</span>
+                </div><span class="counter__label">Загрязнения <br> от поездов</span>
               </div>
-              <div class="graphic-item__wrapper-item">
+              <div class="graphic-item__wrapper-item counter__wrapper">
                 <div style="color: #E21A1A;">
                   <div class="count"><span>В&nbsp;</span><span class="counter">2</span><span class="tag">,</span><span class="counter">1</span></div><span>раза <br> ниже</span>
                 </div>
                 <div class="graphic--bar">
                   <div class="progress--bar" id="progress--bar-3" data-aos="prog3" data-aos-duration="4000" data-aos-delay="800"></div>
-                </div><span>Расход <br> воды</span>
+                </div><span class="counter__label">Расход <br> воды</span>
               </div>
-              <div class="graphic-item__wrapper-item">
+              <div class="graphic-item__wrapper-item counter__wrapper">
                 <div style="color: #E21A1A;">
                   <div class="count"><span>В&nbsp;</span><span class="counter">3</span></div><span>раза <br> ниже</span>
                 </div>
                 <div class="graphic--bar">
                   <div class="progress--bar" id="progress--bar-4" data-aos="prog4" data-aos-duration="4000" data-aos-delay="800"></div>
-                </div><span>Сброс <br> загрязненных <br> вод</span>
+                </div><span class="counter__label">Сброс <br> загрязненных <br> вод</span>
               </div>
             </div><span class="graphic-label">Источник: РЖД</span>
           </div>
@@ -173,27 +181,27 @@
                 <circle cx="6" cy="6" r="6" fill="#7A4FF4"></circle>
               </svg><span>инновационный.</span>
             </p>
-            <div class="graphic-item-background"><img class="land" src="./img/rzd-eco/rzd-eco/1/pic/land.svg" data-aos-delay="350" data-aos="fade-left"><img class="station" src="./img/rzd-eco/rzd-eco/1/pic/station.svg" data-aos-delay="350" data-aos="fade-right"><img class="cloud" src="./img/rzd-eco/rzd-eco/1/pic/sun-and-cloud.svg" data-aos-delay="350" data-aos="fade-left" id="cloud"><img class="fade" src="./img/rzd-eco/rzd-eco/1/pic/right-fade.svg" data-aos-delay="350" data-aos="fade-down"><img class="yacht" src="./img/rzd-eco/rzd-eco/1/pic/yacht.svg" data-aos-delay="350" data-aos="fade-left"><img class="rails" src="./img/rzd-eco/rzd-eco/1/pic/rails.svg" data-aos-delay="350" data-aos="fade-right"><img class="loco" src="./img/rzd-eco/rzd-eco/1/pic/loco.svg" id="train"><span class="graphic-label">Источник: РЖД</span>
-              <div class="graphic-item-background-cloud one" data-aos-delay="550" data-aos="fade-left">Выбросы <br> парниковых газов <br>
+            <div class="graphic-item-background"><img class="m-svg" src="./img/rzd-eco/rzd-eco/1/pic.svg" data-aos-delay="850" data-aos="fade-left"><img class="land d" src="./img/rzd-eco/rzd-eco/1/pic/land.svg" data-aos-delay="350" data-aos="fade-left"><img class="station d" src="./img/rzd-eco/rzd-eco/1/pic/station.svg" data-aos-delay="350" data-aos="fade-right"><img class="cloud d" src="./img/rzd-eco/rzd-eco/1/pic/sun-and-cloud.svg" data-aos-delay="350" data-aos="fade-left" id="cloud"><img class="fade d" src="./img/rzd-eco/rzd-eco/1/pic/right-fade.svg" data-aos-delay="350" data-aos="fade-down"><img class="yacht d" src="./img/rzd-eco/rzd-eco/1/pic/yacht.svg" data-aos-delay="350" data-aos="fade-left"><img class="rails d" src="./img/rzd-eco/rzd-eco/1/pic/rails.svg" data-aos-delay="350" data-aos="fade-right"><img class="loco d" src="./img/rzd-eco/rzd-eco/1/pic/loco.svg" id="train"><span class="graphic-label">Источник: РЖД</span>
+              <div class="graphic-item-background-cloud one d" data-aos-delay="550" data-aos="fade-left">Выбросы <br> парниковых газов <br>
                 <div class="percent__block"><span>-5%</span><span> |</span><span>-11,7%</span></div>
               </div>
-              <div class="graphic-item-background-cloud two" data-aos-delay="550" data-aos="fade-right">Сброс <br> загрязненных вод <br>
+              <div class="graphic-item-background-cloud two d" data-aos-delay="550" data-aos="fade-right">Сброс <br> загрязненных вод <br>
                 <div class="percent__block"><span>-5%</span><span> |</span><span>-11,7%</span></div>
               </div>
-              <div class="graphic-item-background-cloud three" data-aos-delay="550" data-aos="fade-up">Выбросы от <br> стационарных <br> источников <br>
+              <div class="graphic-item-background-cloud three d" data-aos-delay="550" data-aos="fade-up">Выбросы от <br> стационарных <br> источников <br>
                 <div class="percent__block"><span>-5%</span><span> |</span><span>-11,7%</span></div>
               </div>
-              <div class="graphic-item-background-cloud four" data-aos-delay="550" data-aos="fade-down">Выбросы от <br> локомотивов <br>
+              <div class="graphic-item-background-cloud four d" data-aos-delay="550" data-aos="fade-down">Выбросы от <br> локомотивов <br>
                 <div class="percent__block"><span>-5%</span><span> |</span><span>-11,7%</span></div>
               </div>
-              <div class="graphic-item-background-cloud five" data-aos-delay="550" data-aos="fade-left">Расход воды <br>
+              <div class="graphic-item-background-cloud five d" data-aos-delay="550" data-aos="fade-left">Расход воды <br>
                 <div class="percent__block"><span>-5%</span><span> |</span><span>-11,7%</span></div>
               </div>
             </div>
           </div>
         </div>
         <div class="container__wrapper bottom__wrapper">
-          <div class="container__wrapper-item graphic-item"><img class="terrain" src="./img/rzd-eco/rzd-eco/2/scheme/terrain.svg" data-aos-delay="350" data-aos="fade-up"><img class="rail" src="./img/rzd-eco/rzd-eco/2/scheme/rail.svg" data-aos-delay="350" data-aos="fade-up"><img class="building" src="./img/rzd-eco/rzd-eco/2/scheme/building.svg" data-aos-delay="350" data-aos="fade-left"><img class="wire" src="./img/rzd-eco/rzd-eco/2/scheme/wire.svg" data-aos-delay="350" data-aos="fade-left"><img class="mountain-left" src="./img/rzd-eco/rzd-eco/2/scheme/mountain-left.svg" data-aos-delay="350" data-aos="fade-up"><img class="forest-left" src="./img/rzd-eco/rzd-eco/2/scheme/forest-left.svg" data-aos-delay="350" data-aos="fade-up"><img class="right-fade" src="./img/rzd-eco/rzd-eco/2/scheme/right-fade.svg" data-aos-delay="350" data-aos="fade-up"><img class="loco" src="./img/rzd-eco/rzd-eco/2/scheme/loco.svg" id="train-2"></div>
+          <div class="container__wrapper-item graphic-item"><img class="m-svg" src="./img/rzd-eco/rzd-eco/2/scheme.svg" data-aos-delay="850" data-aos="fade-right"><img class="terrain d" src="./img/rzd-eco/rzd-eco/2/scheme/terrain.svg" data-aos-delay="350" data-aos="fade-up"><img class="rail d" src="./img/rzd-eco/rzd-eco/2/scheme/rail.svg" data-aos-delay="350" data-aos="fade-up"><img class="building d" src="./img/rzd-eco/rzd-eco/2/scheme/building.svg" data-aos-delay="350" data-aos="fade-left"><img class="wire d" src="./img/rzd-eco/rzd-eco/2/scheme/wire.svg" data-aos-delay="350" data-aos="fade-left"><img class="mountain-left d" src="./img/rzd-eco/rzd-eco/2/scheme/mountain-left.svg" data-aos-delay="350" data-aos="fade-up"><img class="forest-left d" src="./img/rzd-eco/rzd-eco/2/scheme/forest-left.svg" data-aos-delay="350" data-aos="fade-up"><img class="right-fade d" src="./img/rzd-eco/rzd-eco/2/scheme/right-fade.svg" data-aos-delay="350" data-aos="fade-up"><img class="loco d" src="./img/rzd-eco/rzd-eco/2/scheme/loco.svg" id="train-2"></div>
           <div class="container__wrapper-item">
             <h4>Деньги на экологичные проекты: <br> «зеленые» облигации</h4>
             <p>В&nbsp;мире сегодня активно развивается<span class="colortext">&laquo;зеленое&raquo; финансирование:&nbsp;</span>инвесторы целенаправленно выбирают для инвестиций экологически чистые и&nbsp;значимые проекты. От&nbsp;компании, получившей инвестиции, требуется соблюдать природоохранное законодательство, предоставлять прозрачную экологическую отчетность и&nbsp;сотрудничать с&nbsp;надзорными органами и&nbsp;общественниками.</p>
@@ -228,10 +236,10 @@
             <p>Реконструкция БАМа и&nbsp;Транссиба будет выполняться в&nbsp;полном соответствии с&nbsp;природоохранным законодательством, и&nbsp;все работы будут максимально прозрачными. На&nbsp;каждый строительный объект РЖД опубликуют общедоступный экологический паспорт. Туда войдет информация об&nbsp;объекте и&nbsp;связанных с&nbsp;ним экологических компенсациях, данные экомониторинга в&nbsp;районе объекта, включая контроль почвы, воздуха и&nbsp;вод. Представители общественных и&nbsp;научных организаций смогут лично осматривать места строительства и&nbsp;контролировать, соблюдаются&nbsp;ли меры экологической безопасности. А&nbsp;обычные граждане смогут следить за&nbsp;реконструкцией через систему многоканального информирования: в&nbsp;интернете, СМИ и&nbsp;соцсетях, по&nbsp;телефону горячей линии в&nbsp;Иркутске, в&nbsp;виде выставок на&nbsp;региональных вокзалах.</p>
           </div>
           <div class="container__wrapper-item graphic-item">
-            <p>Байкальская природная территория</p>
-            <div class="graphic-item-background"><img class="lake" src="./img/rzd-eco/rzd-eco/3/map/lake.svg" data-aos-delay="350" data-aos="fade-up"><img class="vector58" src="./img/rzd-eco/rzd-eco/3/map/vector1.svg" data-aos-delay="350" data-aos="fade-left"><img class="vector159" src="./img/rzd-eco/rzd-eco/3/map/vector3.svg" data-aos-delay="350" data-aos="fade-up"><img class="vector160" src="./img/rzd-eco/rzd-eco/3/map/vector4.svg" data-aos-delay="350" data-aos="fade-left"><img class="vector161" src="./img/rzd-eco/rzd-eco/3/map/vector5.svg" data-aos-delay="350" data-aos="fade-up"><img class="vector62" src="./img/rzd-eco/rzd-eco/3/map/vector2.svg" data-aos-delay="350" data-aos="fade-left"><img class="vector163" src="./img/rzd-eco/rzd-eco/3/map/vector6.svg" data-aos-delay="350" data-aos="fade-up"><img class="railroad" src="./img/rzd-eco/rzd-eco/3/map/railroad.svg" data-aos-delay="350" data-aos="fade-left"><img class="text" src="./img/rzd-eco/rzd-eco/3/map/text.svg" data-aos-delay="350" data-aos="fade-right"><img class="city" src="./img/rzd-eco/rzd-eco/3/map/city.svg" data-aos-delay="350" data-aos="fade-down"><img class="city2" src="./img/rzd-eco/rzd-eco/3/map/city.svg" data-aos-delay="350" data-aos="fade-right"><img class="city3" src="./img/rzd-eco/rzd-eco/3/map/city.svg" data-aos-delay="350" data-aos="fade-down"><img class="city4" src="./img/rzd-eco/rzd-eco/3/map/city.svg" data-aos-delay="350" data-aos="fade-up"></div>
-            <p class="bottom__text">Компенсация ущерба
-              <div class="graphic-item-background bottom__wrapper"><img src="./img/rzd-eco/rzd-eco/4/pic-lake/pic_lake.svg" data-aos-delay="250" data-aos="fade-left">
+            <p class="d">Байкальская природная территория</p>
+            <div class="graphic-item-background"><img class="m-svg" src="./img/layer--lake.svg" data-aos-delay="850" data-aos="fade-left"><img class="m-svg" src="./img/layer--popup.svg" data-aos-delay="850" data-aos="fade-left"><img class="lake d" src="./img/rzd-eco/rzd-eco/3/map/lake.svg" data-aos-delay="350" data-aos="fade-up"><img class="vector58 d" src="./img/rzd-eco/rzd-eco/3/map/vector1.svg" data-aos-delay="350" data-aos="fade-left"><img class="vector159 d" src="./img/rzd-eco/rzd-eco/3/map/vector3.svg" data-aos-delay="350" data-aos="fade-up"><img class="vector160 d" src="./img/rzd-eco/rzd-eco/3/map/vector4.svg" data-aos-delay="350" data-aos="fade-left"><img class="vector161 d" src="./img/rzd-eco/rzd-eco/3/map/vector5.svg" data-aos-delay="350" data-aos="fade-up"><img class="vector62 d" src="./img/rzd-eco/rzd-eco/3/map/vector2.svg" data-aos-delay="350" data-aos="fade-left"><img class="vector163 d" src="./img/rzd-eco/rzd-eco/3/map/vector6.svg" data-aos-delay="350" data-aos="fade-up"><img class="railroad d" src="./img/rzd-eco/rzd-eco/3/map/railroad.svg" data-aos-delay="350" data-aos="fade-left"><img class="text d" src="./img/rzd-eco/rzd-eco/3/map/text.svg" data-aos-delay="350" data-aos="fade-right"><img class="city d" src="./img/rzd-eco/rzd-eco/3/map/city.svg" data-aos-delay="350" data-aos="fade-down"><img class="city2 d" src="./img/rzd-eco/rzd-eco/3/map/city.svg" data-aos-delay="350" data-aos="fade-right"><img class="city3 d" src="./img/rzd-eco/rzd-eco/3/map/city.svg" data-aos-delay="350" data-aos="fade-down"><img class="city4 d" src="./img/rzd-eco/rzd-eco/3/map/city.svg" data-aos-delay="350" data-aos="fade-up"></div>
+            <p class="bottom__text d">Компенсация ущерба
+              <div class="graphic-item-background bottom__wrapper d"><img src="./img/rzd-eco/rzd-eco/4/pic-lake/pic_lake.svg" data-aos-delay="250" data-aos="fade-left">
                 <div class="popup one" data-aos-delay="350" data-aos="fade-right">Точечные рубки леса вдоль <br> берегов Байкала: полоса <br> 10&ndash;15&nbsp;м (всего 40&nbsp;га)</div>
                 <div class="popup two" data-aos-delay="350" data-aos="fade-bottom">Половину вырубки РЖД уже <br> восстановили, высадив <br> в&nbsp;районе Байкала 80&nbsp;000 <br> сосен на&nbsp;20&nbsp;га.</div>
                 <p>Для возведения объектов <br> вдоль действующих путей, <br> если нет альтернатив</p>
@@ -273,7 +281,7 @@
           </div>
         </div>
       </section>
-      <footer data-aos-delay="350" data-aos="fade-top">
+      <footer>
         <div class="bottom__title"><span>Разработка:&nbsp;</span><span>Ornament media</span></div>
         <div class="bottom__social">
           <svg width="12" height="24" viewbox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
