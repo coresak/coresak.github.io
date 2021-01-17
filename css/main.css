@@ -209,6 +209,7 @@ section.one .l2 {
 section.one .l3 {
   right: 0;
   bottom: 220px;
+  z-index: 4;
 }
 section.one .l4 {
   right: 0;
@@ -229,8 +230,10 @@ section.one .l6 {
   z-index: 4;
 }
 section.one .l7 {
-  right: 300px;
   bottom: 150px;
+  margin: auto;
+  right: 0;
+  left: 0;
   z-index: 3;
 }
 section.one .l8 {
@@ -1205,6 +1208,10 @@ footer .bottom__logos svg {
   }
 }
 @media (max-width: 1366px) {
+  section.one .l6 {
+    right: -100px;
+  }
+
   section.one .d:nth-child(1) {
     width: 100%;
     position: absolute;
@@ -1247,24 +1254,26 @@ section.six h4 {
   }
 }
 @media (max-width: 1200px) {
-  section.one img:nth-child(4) {
+  section.one .l1 {
     bottom: 12px;
   }
-  section.one img:nth-child(5) {
-    right: -200px;
-    bottom: 200px;
+  section.one .l2 {
+    left: 50px;
+    bottom: 9px;
   }
-  section.one img:nth-child(6) {
+  section.one .l3 {
+    right: -220px;
+    bottom: 240px;
+  }
+  section.one .l4 {
     right: -150px;
   }
-  section.one img:nth-child(7) {
-    right: -150px;
+  section.one .l6 {
+    bottom: 12px;
+    left: 300px;
   }
-  section.one img:nth-child(8) {
-    bottom: 15px;
-  }
-  section.one img:nth-child(10) {
-    left: 25%;
+  section.one .l8 {
+    left: 24%;
   }
 
   section {
@@ -1380,20 +1389,27 @@ section.six h4 {
   }
 }
 @media (max-width: 1024px) {
-  section.one img:nth-child(8) {
-    transform: scale(0.9) !important;
-    left: -10px;
-    bottom: 0;
+  section.one .l1 {
+    left: 0;
   }
-  section.one img:nth-child(6) {
-    right: -200px;
+  section.one .l2 {
+    bottom: 9px;
   }
-  section.one img:nth-child(7) {
-    right: -200px;
+  section.one .l3 {
+    right: -400px;
   }
-  section.one img:nth-child(5) {
-    right: -250px;
-    bottom: 200px;
+  section.one .l4 {
+    right: -130px;
+  }
+  section.one .l5 {
+    right: -130px;
+  }
+  section.one .l6 {
+    right: -150px;
+    bottom: 12px;
+  }
+  section.one .l8 {
+    left: 34%;
   }
 
   .layer-map-d__container {
@@ -1597,21 +1613,21 @@ section.six h4 {
 
   .main__small .g1 {
     left: 0;
-    bottom: 0;
+    bottom: -25px;
   }
   .main__small .g2 {
-    right: 0;
-    bottom: 0;
+    right: -10px;
+    bottom: -10px;
     z-index: 2 !important;
   }
   .main__small .g3 {
     left: 0;
-    bottom: 0;
+    bottom: -6px;
+    right: -10px !important;
     z-index: 2 !important;
   }
   .main__small .g4 {
-    left: 0;
-    bottom: 120px !important;
+    bottom: 100px !important;
     z-index: 1 !important;
   }
 
@@ -2095,9 +2111,8 @@ section.four .graphic-item::before, section.ten .graphic-item::before {
   }
   .extra--size.main__small .g4 {
     top: auto !important;
-    bottom: 50px !important;
+    bottom: 40px !important;
     width: 30%;
-    left: auto;
   }
 
   #progress--container .container__wrapper {
