@@ -41,6 +41,9 @@
 :root .ml-2 {
   margin-left: 24px;
 }
+:root img {
+  transition: 0.3s;
+}
 
 .main__wrapper {
   margin: auto;
@@ -54,6 +57,10 @@
 
 .lake__container {
   overflow-x: hidden;
+}
+
+.small--size {
+  overflow: hidden;
 }
 
 .header__list {
@@ -2454,6 +2461,7 @@ section.six .container__wrapper-item:nth-child(2) p {
     position: absolute;
     top: 1200px !important;
     width: 100%;
+    overflow: visible !important;
   }
   section.eight .lake__wrapper .lake__container img {
     width: 100%;
@@ -2558,6 +2566,18 @@ footer .bottom__logos svg {
   }
 }
 @media (max-width: 350px) {
+  section.eight .lake__wrapper {
+    position: absolute;
+    top: 1250px !important;
+    width: 100%;
+    overflow: visible !important;
+  }
+
+  .bottom__text.d {
+    position: absolute;
+    top: 750px !important;
+  }
+
   section.six .container__wrapper-item:nth-child(2) .graphic-label {
     margin-top: 180%;
     margin-left: 24px;
@@ -2610,7 +2630,7 @@ footer .bottom__logos svg {
 
   .bottom__text.d {
     position: absolute;
-    top: 900px !important;
+    top: 890px !important;
   }
 
   section.eight .container__wrapper p:nth-child(4) {
