@@ -43,6 +43,7 @@
 }
 
 .main__wrapper {
+  overflow: hidden;
   margin: auto;
   width: 1440px;
 }
