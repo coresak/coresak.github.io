@@ -1432,6 +1432,7 @@ section.six h4 {
   }
   .layer-map-m__container .small--size {
     display: block;
+    overflow: visible !important;
   }
   .layer-map-m__container .medium--size img {
     display: block;
