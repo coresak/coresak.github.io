@@ -2562,6 +2562,10 @@ footer .bottom__logos svg {
     right: -55px;
   }
 
+  .reverse {
+    margin-top: 15px !important;
+  }
+
   .counter__wrapper:nth-child(2) .counter__label,
 .counter__wrapper:nth-child(3) .counter__label,
 .counter__wrapper:nth-child(4) .counter__label {
