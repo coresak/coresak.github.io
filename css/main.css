@@ -183,7 +183,9 @@ header nav .nav__svg:last-child {
 }
 
 .container {
-  transition-duration: 0.6s;
+  width: 100%;
+  overflow: hidden;
+  transition: 0.1s;
 }
 
 section.one {
@@ -239,6 +241,7 @@ section.one .l7 {
 section.one .l8 {
   right: 0;
   left: 17.3%;
+  top: auto;
   bottom: 20px;
   z-index: 4;
 }
@@ -992,6 +995,7 @@ section.eight .graphic-item-background {
   height: 70%;
   top: -150px;
   min-width: 564.5px;
+  overflow: hidden;
 }
 section.eight .graphic-item-background img {
   position: absolute;
@@ -2558,6 +2562,18 @@ footer .bottom__logos svg {
     margin-top: 180%;
     margin-left: 24px;
   }
+
+  .counter__wrapper .counter__label {
+    font-size: 12px !important;
+    right: -60px;
+  }
+
+  .counter__wrapper:nth-child(2) .counter__label,
+.counter__wrapper:nth-child(3) .counter__label,
+.counter__wrapper:nth-child(4) .counter__label {
+    top: 150px;
+    right: -55px;
+  }
 }
 @media (max-width: 320px) {
   section.six .container__wrapper-item:nth-child(2) .graphic-label {
@@ -2604,8 +2620,7 @@ footer .bottom__logos svg {
   section.eight .container__wrapper p:nth-child(2) {
     margin-top: 430px;
   }
-}
-@media (max-width: 375px) {
+
   .counter__wrapper .counter__label {
     font-size: 12px !important;
     right: -67px;
