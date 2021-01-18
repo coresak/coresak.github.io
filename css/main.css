@@ -1425,8 +1425,13 @@ section.six h4 {
     display: none;
   }
 
+  section.eight .graphic-item-background {
+    overflow: visible !important;
+  }
+
   .layer-map-m__container {
     display: block;
+    overflow: visible !important;
   }
   .layer-map-m__container .small--size {
     display: block;
