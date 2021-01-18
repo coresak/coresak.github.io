@@ -41,9 +41,6 @@
 :root .ml-2 {
   margin-left: 24px;
 }
-:root img {
-  transition: 0.3s;
-}
 
 .main__wrapper {
   margin: auto;
