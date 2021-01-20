@@ -53,10 +53,6 @@
   margin-right: auto;
 }
 
-.lake__container {
-  overflow-x: hidden;
-}
-
 .small--size {
   overflow: hidden;
 }
@@ -345,11 +341,11 @@ section.eight .container__wrapper-item:nth-child(2) p,
 section.ten .container__wrapper-item:nth-child(2) p {
   color: var(--text-color);
   font-family: "RussianRail", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   max-width: 463px;
   margin-bottom: 17px;
-  font-size: var(--font-18);
-  line-height: 140%;
+  font-size: var(--font-16);
+  line-height: 180%;
   color: var(--text-color);
 }
 section.two .graphic-item:after,
@@ -839,7 +835,7 @@ section.six .container__wrapper-item:nth-child(2) .graphic-label {
 .graphic-item-background .graphic-item-background-cloud.three {
   background-image: url("../img/rzd-eco/rzd-eco/5/cloud-three.svg");
   left: -40px;
-  top: 490px;
+  top: 590px;
   right: auto;
   padding-top: 0;
 }
@@ -992,13 +988,13 @@ section.eight .bottom__wrapper p {
   font-weight: 300 !important;
   font-size: 16px !important;
   position: absolute;
-  bottom: 150px;
+  bottom: 100px;
   top: auto !important;
 }
 section.eight .graphic-item-background {
   position: relative;
   height: 70%;
-  top: -150px;
+  top: -50px;
   min-width: 564.5px;
   overflow: hidden;
 }
@@ -1207,8 +1203,18 @@ footer .bottom__logos svg {
   font-weight: 400;
 }
 
+.lake__container {
+  overflow: visible;
+}
+
+.lake__wrapper {
+  overflow: visible !important;
+}
 .lake__wrapper img:nth-child(2) {
   right: -100px;
+}
+.lake__wrapper img:nth-child(2) {
+  right: -150px;
 }
 
 @media (max-width: 1440px) {
@@ -1621,6 +1627,17 @@ section.six h4 {
   }
 }
 @media (max-width: 768px) {
+  .graphic-item-background-cloud span:nth-child(3) {
+    color: #7A4FF4;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .six .ml-2 .small--size .g3 {
+    width: 80%;
+  }
+
   .g1, .g2, .g3, .g4, .g5, .g6, .g7 {
     object-fit: cover;
     position: absolute;
@@ -1731,8 +1748,8 @@ section.six h4 {
   }
   .six .ml-2 .small--size .g3,
 .six .ml-2 .bottom__wrapper .small--size .g3 {
-    top: 0;
-    z-index: 7;
+    top: 10px;
+    z-index: 5;
   }
   .six .ml-2 .small--size .g4,
 .six .ml-2 .bottom__wrapper .small--size .g4 {
@@ -1751,7 +1768,7 @@ section.six h4 {
 .six .ml-2 .bottom__wrapper .small--size .g7 {
     width: 100%;
     bottom: 0;
-    right: 0;
+    right: -40px;
     z-index: 6;
   }
 
@@ -1925,11 +1942,16 @@ section.four .graphic-item::before, section.ten .graphic-item::before {
     font-size: 12px !important;
     left: auto !important;
     right: 0;
-    top: 510px !important;
+    top: 20px !important;
   }
 
   .popup.two {
-    top: 710px !important;
+    top: auto !important;
+    bottom: 20%;
+  }
+
+  section.eight .bottom__wrapper p {
+    position: initial;
   }
 
   section.eight .bottom__wrapper p {
@@ -1941,43 +1963,92 @@ section.four .graphic-item::before, section.ten .graphic-item::before {
   }
 
   .lake__container {
-    height: 400px;
+    height: auto;
+    min-height: 400px;
+    top: auto !important;
   }
   .lake__container img {
-    width: 50%;
+    width: 100%;
     right: 0;
+    bottom: 10%;
+  }
+
+  section.eight .graphic-item .bottom__text {
+    top: 0;
+  }
+
+  .container__map .bottom__wrapper {
+    margin-left: 0 !important;
+    margin-top: 50px !important;
+    top: 0 !important;
+    bottom: auto !important;
   }
 
   section.eight .graphic-item-background {
     height: 35%;
   }
 
+  .layer-map-m__container .medium--size img {
+    display: block;
+    left: 80px;
+    right: auto;
+    margin: auto;
+    bottom: 0;
+    top: auto;
+  }
+
+  .layer-map-m__container .medium--size .g3 {
+    z-index: 3;
+    top: auto;
+    right: 20px;
+    left: auto;
+    bottom: 0;
+  }
+
+  .layer-map-m__container .medium--size .g2 {
+    z-index: 2;
+    top: auto;
+    bottom: 26px;
+    left: -5px;
+  }
+
+  .layer-map-m__container .medium--size .g4 {
+    z-index: 3;
+    top: auto;
+    right: 160px;
+    left: auto;
+    bottom: 25px;
+  }
+
   section.eight .graphic-item-background {
-    position: initial;
+    position: relative;
     min-width: auto;
   }
 
   .layer-map-m__container .small--size {
-    min-height: 300px;
+    min-height: 350px;
     position: relative;
+  }
+  .layer-map-m__container .small--size.with__map {
+    left: 24px;
   }
   .layer-map-m__container .small--size .g1 {
     left: auto;
-    right: 40px;
+    right: 20px;
   }
   .layer-map-m__container .small--size .g2 {
     left: auto;
-    right: 20px;
+    right: 0;
     top: 115px;
   }
   .layer-map-m__container .small--size .g3 {
     left: auto;
-    right: 135px;
+    right: 115px;
     top: 214px;
   }
   .layer-map-m__container .small--size .g4 {
     left: auto;
-    right: 45px;
+    right: 25px;
     top: 125px;
   }
 
@@ -1989,8 +2060,74 @@ section.four .graphic-item::before, section.ten .graphic-item::before {
   .extra--size.main__small {
     display: none !important;
   }
+
+  .layer-map-m__container .small--size {
+    display: none !important;
+  }
+
+  .container__map .container__wrapper-item.small--size {
+    display: none !important;
+  }
+
+  .container__map .small--size.text {
+    display: none;
+  }
+  .container__map .medium--size {
+    display: block !important;
+  }
+  .container__map .medium--size p {
+    max-width: 100% !important;
+  }
 }
 @media (max-width: 450px) {
+  .container__map .container__wrapper-item.small--size {
+    display: block !important;
+  }
+
+  section.eight .graphic-item-background {
+    top: 0;
+  }
+
+  .container__map .small--size {
+    display: block !important;
+  }
+  .container__map .medium--size {
+    display: none !important;
+  }
+  .container__map .medium--size p {
+    max-width: 100% !important;
+  }
+
+  .lake__container {
+    height: auto;
+    min-height: 400px;
+  }
+  .lake__container img {
+    width: 60%;
+    right: -24px;
+    bottom: 10%;
+  }
+
+  section.eight .graphic-item-background {
+    position: relative;
+  }
+
+  .layer-map-m__container .small--size {
+    display: block !important;
+    min-height: 350px;
+    position: relative;
+  }
+  .layer-map-m__container .small--size.with__map {
+    left: -10px;
+  }
+
+  .container__map .small--size {
+    min-width: 100%;
+  }
+  .container__map .small--size.text {
+    position: initial;
+  }
+
   .graphic-item-background-cloud {
     z-index: 100;
     transform: scale(0.8) !important;
@@ -2013,19 +2150,29 @@ section.four .graphic-item::before, section.ten .graphic-item::before {
     z-index: 10 !important;
   }
 
-  .graphic-item-background .graphic-item-background-cloud.two, .graphic-item-background .graphic-item-background-cloud.four {
+  .graphic-item-background .graphic-item-background-cloud.four {
     right: -60px;
+    bottom: 120px;
+    top: auto;
+  }
+
+  .graphic-item-background .graphic-item-background-cloud.two {
+    right: -80px;
+    bottom: 280px;
+    top: auto;
   }
 
   .graphic-item-background .graphic-item-background-cloud.five,
 .graphic-item-background-cloud {
     left: auto;
+    top: auto;
     right: 80px;
+    bottom: 280px;
   }
 
   .graphic-item-background-cloud {
     right: 0;
-    top: 250px;
+    top: 350px;
   }
 
   .six .ml-2 .small--size .g1 {
@@ -2052,6 +2199,7 @@ section.four .graphic-item::before, section.ten .graphic-item::before {
     display: inline-flex;
     top: 70px;
     left: 0;
+    z-index: 100;
   }
   .train__wrapper-title:after {
     content: "";
@@ -2404,6 +2552,9 @@ section.six .container__wrapper-item:nth-child(2) p {
   }
 
   section.eight .bottom__wrapper p {
+    position: initial !important;
+  }
+  section.eight .bottom__wrapper p br {
     display: none;
   }
 
@@ -2426,46 +2577,30 @@ section.six .container__wrapper-item:nth-child(2) p {
     display: none !important;
   }
 
-  section.eight .container__wrapper-item.graphic-item {
-    position: absolute;
-    top: 170px;
-  }
-
   section.eight .container__wrapper p {
     font-size: 14px !important;
-  }
-
-  section.eight .container__wrapper p:nth-child(2) {
-    margin-top: 430px;
-  }
-
-  section.eight .container__wrapper p:nth-child(4) {
-    margin-top: 500px;
   }
 
   .popup {
     font-size: 12px !important;
     left: 0 !important;
     right: auto !important;
-    top: 180px !important;
+    top: auto !important;
+    bottom: 70px !important;
   }
 
   .popup.two {
     right: 0 !important;
-    top: -120px !important;
+    top: 0 !important;
     left: auto !important;
-  }
-
-  .bottom__text.d {
-    position: absolute;
-    top: 680px !important;
+    bottom: auto !important;
   }
 
   section.eight .lake__wrapper {
-    position: absolute;
-    top: 1200px !important;
     width: 100%;
     overflow: visible !important;
+    position: relative !important;
+    top: auto !important;
   }
   section.eight .lake__wrapper .lake__container img {
     width: 100%;
@@ -2557,6 +2692,14 @@ footer .bottom__logos svg {
   }
 }
 @media (max-width: 375px) {
+  .layer-map-m__container .small--size.with__map {
+    left: 24px;
+  }
+
+  .popup {
+    bottom: 90px !important;
+  }
+
   .counter__wrapper .counter__label {
     font-size: 12px !important;
     right: -55px;
@@ -2574,18 +2717,6 @@ footer .bottom__logos svg {
   }
 }
 @media (max-width: 350px) {
-  section.eight .lake__wrapper {
-    position: absolute;
-    top: 1250px !important;
-    width: 100%;
-    overflow: visible !important;
-  }
-
-  .bottom__text.d {
-    position: absolute;
-    top: 750px !important;
-  }
-
   section.six .container__wrapper-item:nth-child(2) .graphic-label {
     margin-top: 180%;
     margin-left: 24px;
@@ -2609,6 +2740,12 @@ footer .bottom__logos svg {
     margin-left: 24px;
   }
 
+  .lake__container img {
+    width: 110% !important;
+    right: -24px;
+    bottom: 25%;
+  }
+
   .layer-map-m__container .small--size .g1 {
     left: auto;
     right: 20px;
@@ -2628,25 +2765,6 @@ footer .bottom__logos svg {
 
   .layer-map-m__container .small--size .g3 {
     right: 115px;
-  }
-
-  section.eight .lake__wrapper {
-    position: absolute;
-    top: 1390px !important;
-    width: 100%;
-  }
-
-  .bottom__text.d {
-    position: absolute;
-    top: 890px !important;
-  }
-
-  section.eight .container__wrapper p:nth-child(4) {
-    margin-top: 500px;
-  }
-
-  section.eight .container__wrapper p:nth-child(2) {
-    margin-top: 430px;
   }
 
   .counter__wrapper .counter__label {
