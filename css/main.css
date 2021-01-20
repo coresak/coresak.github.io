@@ -2085,6 +2085,11 @@ section.four .graphic-item::before, section.ten .graphic-item::before {
   }
 }
 @media (max-width: 450px) {
+  .bottom__text.d {
+    font-size: 16px;
+    font-weight: 400 !important;
+  }
+
   .six .ml-2 .small--size .g5, .six .ml-2 .bottom__wrapper .small--size .g5 {
     top: auto;
     bottom: 10px;
@@ -2620,6 +2625,9 @@ section.six .container__wrapper-item:nth-child(2) p {
   }
 
   section.eight .graphic-item .bottom__text {
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 18px !important;
     top: 0;
   }
 
@@ -2767,7 +2775,13 @@ footer .bottom__logos svg {
 
   .popup {
     left: 24px !important;
-    bottom: 85px !important;
+    bottom: 95px !important;
+  }
+
+  section.six .container__wrapper p:nth-child(1) {
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 18px !important;
   }
 
   .counter__wrapper .counter__label {
