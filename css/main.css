@@ -2085,6 +2085,11 @@ section.four .graphic-item::before, section.ten .graphic-item::before {
   }
 }
 @media (max-width: 450px) {
+  section.eight .container__wrapper p.d {
+    font-weight: 400;
+    font-size: 18px !important;
+  }
+
   .bottom__text.d {
     font-size: 16px;
     font-weight: 400 !important;
@@ -2613,11 +2618,6 @@ section.six .container__wrapper-item:nth-child(2) p {
     display: none;
   }
 
-  .text-s {
-    position: relative;
-    font-size: 16px !important;
-  }
-
   .layer-map-m__container .small--size .g3 {
     left: auto;
     right: 115px;
@@ -2714,6 +2714,12 @@ section.six .container__wrapper-item:nth-child(2) p {
     overflow: visible;
     z-index: 5;
     opacity: 0.4;
+  }
+
+  section.ten .container__wrapper p.text-s {
+    font-weight: 400 !important;
+    position: relative;
+    font-size: 18px !important;
   }
 
   footer {
