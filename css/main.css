@@ -2239,6 +2239,7 @@ section.four .graphic-item::before, section.ten .graphic-item::before {
     left: -24px;
     right: 0;
     z-index: 99;
+    overflow: visible;
   }
 
   section.one {
