@@ -927,7 +927,18 @@ section.six .container__wrapper-item h5.bottom__title {
 }
 .bottom__wrapper .graphic-item p {
   position: relative;
-  padding-left: 50px;
+  padding-left: 0;
+  overflow: visible;
+}
+.bottom__wrapper .graphic-item p:nth-child(3):after {
+  content: "";
+  height: 152px;
+  width: 152px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg width='172' height='172' viewBox='0 0 172 172' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect opacity='0.1' width='172' height='172' fill='%23E21A1A'/%3E%3C/svg%3E%0A");
+  transition: 0.3s;
 }
 .bottom__wrapper .graphic-item p:first-child {
   font-weight: 400;
@@ -1797,6 +1808,29 @@ section.ten .container__wrapper-item .popup span:nth-child(4) {
     right: 30px;
   }
 }
+@media (min-width: 767px) {
+  .mobile {
+    display: none;
+  }
+
+  .wide {
+    display: block;
+  }
+}
+@media (max-width: 767px) {
+  .mobile {
+    display: block;
+    width: 95% !important;
+  }
+
+  h4.mobile {
+    padding-left: 20px;
+  }
+
+  .wide {
+    display: none;
+  }
+}
 @media (min-width: 500px) and (max-width: 767px) {
   section {
     width: 500px;
@@ -2025,6 +2059,7 @@ section.ten {
 
   section.six .container__wrapper.bottom__wrapper .graphic-item__wrapper.item__vertical {
     flex-wrap: wrap;
+    justify-content: space-between;
   }
   section.six .container__wrapper.bottom__wrapper .graphic-item__wrapper.item__vertical .caption {
     width: 90%;
@@ -2040,12 +2075,23 @@ section.ten {
   }
 
   section.six .container__wrapper.bottom__wrapper .graphic-item__wrapper-item {
+    max-width: 114px;
     width: 32%;
   }
 
   .bottom__wrapper .graphic-item p {
     padding-left: 20px;
     padding-top: 5px;
+  }
+  .bottom__wrapper .graphic-item p:nth-child(3):after {
+    content: "";
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='172' height='172' viewBox='0 0 172 172' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect opacity='0.1' width='172' height='172' fill='%23E21A1A'/%3E%3C/svg%3E%0A");
+    transition: 0.3s;
   }
   .bottom__wrapper .graphic-item p br {
     display: none;
@@ -2132,7 +2178,8 @@ section.ten {
   }
 
   section.one .l9 {
-    width: 320px;
+    right: -20px;
+    width: 520px;
     bottom: 65px;
     z-index: 0;
   }
