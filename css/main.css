@@ -2356,6 +2356,11 @@ section.ten {
     left: 0;
     bottom: 10px;
   }
+  section.two .graphic-item .red .l4 {
+    width: 375px;
+    left: 0;
+    bottom: 10px;
+  }
   section.two .graphic-item .red .l5 {
     width: 323px;
     left: 20px;
@@ -2459,6 +2464,10 @@ section.ten {
     left: 0;
     bottom: 10px;
     height: 210px;
+  }
+  section.two .graphic-item .red .l4 {
+    left: auto;
+    right: -40px;
   }
   section.two .graphic-item .red .l5 {
     width: 375px;
@@ -2569,6 +2578,12 @@ section.ten {
     bottom: 40px;
     left: 0;
   }
+  section.two .graphic-item .red .l4 {
+    width: 320px;
+    left: 0;
+    top: 0;
+    bottom: auto;
+  }
   section.two .graphic-item .red .l5 {
     width: 320px;
     height: 170px;
@@ -2623,6 +2638,13 @@ section.ten {
     width: 320px;
     bottom: 40px;
     left: 0;
+  }
+  section.two .graphic-item .red .l4 {
+    width: 320px;
+    left: 20px;
+    right: auto;
+    top: 0;
+    bottom: auto;
   }
   section.two .graphic-item .red .l5 {
     width: 320px;
