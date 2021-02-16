@@ -902,7 +902,7 @@ section.six .container__wrapper-item {
   flex-direction: column;
   justify-content: flex-end;
   width: 49%;
-  margin-bottom: 175px;
+  margin-bottom: 50px;
 }
 section.six .container__wrapper-item h5 {
   font-size: 28px;
@@ -1359,7 +1359,7 @@ footer {
     flex-direction: column;
     justify-content: flex-end;
     width: 45%;
-    margin-bottom: 175px;
+    margin-bottom: 75px;
     margin-left: 24px;
   }
 
@@ -1653,7 +1653,7 @@ section.ten .container__wrapper-item .popup.p2 {
     flex-direction: column;
     justify-content: flex-end;
     width: 49%;
-    margin-bottom: 175px;
+    margin-bottom: 75px;
   }
   section.six .container__wrapper-item:nth-child(1) {
     width: 45%;
