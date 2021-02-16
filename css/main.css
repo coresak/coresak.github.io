@@ -1962,7 +1962,7 @@ section.ten {
   section.one .l2 {
     width: 80px;
     bottom: 115px;
-    z-index: 10;
+    z-index: 12;
   }
 
   section.ten .container__wrapper-item:nth-child(2) .red {
@@ -2132,7 +2132,7 @@ section.ten {
     width: 450px;
     right: -280px;
     bottom: 40px;
-    z-index: 11;
+    z-index: 13;
   }
 
   section.one .l9 {
@@ -2159,7 +2159,6 @@ section.ten {
   section.two .graphic-item [data-aos=width-in] {
     position: relative;
     width: 0;
-    transition: 2s;
   }
 
   .btn__block {
@@ -2314,6 +2313,29 @@ section.ten {
     margin-left: 0;
   }
 }
+@media (max-width: 767px) {
+  section.two .graphic-item {
+    overflow: visible;
+    margin-top: 200px !important;
+    margin-bottom: 0 !important;
+  }
+
+  .red.m {
+    overflow: visible !important;
+  }
+
+  section.two .graphic-item .red .popup {
+    top: -210px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    max-width: 300px;
+    font-size: 14px;
+    line-height: 180%;
+    z-index: 100;
+    transition-delay: 2s;
+  }
+}
 @media (min-width: 375px) and (max-width: 767px) {
   section.two .graphic-item {
     width: 375px;
@@ -2439,7 +2461,7 @@ section.ten {
   }
 
   section.two .graphic-item [data-aos=width-in].aos-animate {
-    transition-delay: 1.2s;
+    transition-delay: 0.6s;
     width: 375px;
   }
 
@@ -2539,6 +2561,11 @@ section.ten {
   }
 }
 @media (min-width: 320px) and (max-width: 374px) {
+  section.six .container__wrapper.bottom__wrapper .graphic-item__wrapper.item__vertical .caption {
+    width: 100%;
+    padding-left: 20px;
+  }
+
   section.two .graphic-item {
     position: relative;
     background: url("../img/map-transsib/layers/Russia_map_640.png");
