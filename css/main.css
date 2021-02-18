@@ -1959,6 +1959,24 @@ section.ten {
   }
 }
 @media (min-width: 320px) and (max-width: 499px) {
+  .counter__wrapper div:first-child span {
+    text-align: left;
+  }
+
+  .count {
+    text-align: left !important;
+  }
+
+  section.six .container__wrapper.bottom__wrapper .graphic-item__wrapper.item__vertical .graphic--bar {
+    left: 0;
+    margin-right: auto !important;
+    margin-left: 24px !important;
+  }
+
+  section.six .container__wrapper.bottom__wrapper .graphic-item__wrapper.item__vertical .block {
+    left: 40px !important;
+  }
+
   section.one .l10 {
     width: 475px;
     bottom: -12px;
@@ -2476,6 +2494,12 @@ section.ten {
   }
 }
 @media (max-width: 375px) {
+  section.six .container__wrapper.bottom__wrapper .graphic-item__wrapper.item__vertical .graphic--bar {
+    left: 0;
+    margin-right: auto !important;
+    margin-left: 26px !important;
+  }
+
   section.two .graphic-item {
     width: 375px;
     height: 210px !important;
@@ -2654,6 +2678,12 @@ section.ten {
   }
 }
 @media (max-width: 320px) {
+  section.six .container__wrapper.bottom__wrapper .graphic-item__wrapper.item__vertical .graphic--bar {
+    left: 0;
+    margin-right: auto !important;
+    margin-left: 24px !important;
+  }
+
   section.two .graphic-item {
     position: relative;
     background: url("../img/map-transsib/layers/Russia_map_640.png");
