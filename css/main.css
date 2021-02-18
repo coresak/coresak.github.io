@@ -1959,6 +1959,22 @@ section.ten {
   }
 }
 @media (min-width: 320px) and (max-width: 499px) {
+  section.one .l10 {
+    width: 475px;
+    bottom: -12px;
+    left: -40px;
+    min-height: 180px;
+    z-index: 7;
+  }
+
+  section.one .l13 {
+    width: 420px;
+    height: 170px !important;
+    bottom: 45px;
+    left: -50px;
+    z-index: 0;
+  }
+
   section.one .l2 {
     width: 80px;
     bottom: 115px;
@@ -2097,7 +2113,7 @@ section.ten {
   }
 
   section.one .l4 {
-    bottom: 56px;
+    bottom: 55px;
     width: 800px;
     left: -100px;
     right: auto;
@@ -2113,7 +2129,7 @@ section.ten {
 
   section.one .l1 {
     width: 348px;
-    bottom: 85px;
+    bottom: 90px;
     left: 0;
     z-index: 6;
   }
@@ -2124,21 +2140,21 @@ section.ten {
 
   section.one .l6 {
     left: -180px;
-    bottom: 40px;
+    bottom: 20px;
     z-index: 12;
   }
 
   section.one .l11 {
     width: 450px;
-    right: -280px;
+    right: -270px;
     bottom: 40px;
     z-index: 13;
   }
 
   section.one .l9 {
-    right: -20px;
+    right: -80px;
     width: 520px;
-    bottom: 65px;
+    bottom: 35px;
     z-index: 0;
   }
 
