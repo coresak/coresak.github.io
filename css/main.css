@@ -2337,6 +2337,13 @@ section.ten {
   }
 }
 @media (min-width: 375px) and (max-width: 767px) {
+  .counter__wrapper div:first-child {
+    text-align: left;
+  }
+  .counter__wrapper div:first-child span {
+    text-align: left;
+  }
+
   section.two .graphic-item {
     width: 375px;
     height: 210px !important;
@@ -2377,6 +2384,7 @@ section.ten {
     width: 375px;
     left: 0;
     bottom: 10px;
+    height: 210px !important;
   }
   section.two .graphic-item .red .l4 {
     width: 375px;
@@ -2384,16 +2392,17 @@ section.ten {
     bottom: 10px;
   }
   section.two .graphic-item .red .l5 {
-    width: 323px;
-    left: 20px;
-    bottom: 20px;
+    width: 375px;
+    left: 0;
+    bottom: 10px;
+    height: 210px !important;
     z-index: 11;
     transition-delay: 2s;
   }
   section.two .graphic-item .red .l6 {
     right: 0;
     left: 27px;
-    width: 255px;
+    width: 375px;
     bottom: 15px;
     transition-delay: 2s;
   }
