@@ -2113,9 +2113,10 @@ section.ten {
   }
 
   section.one .l4 {
-    bottom: 55px;
+    bottom: 40px;
     width: 800px;
-    left: -100px;
+    height: 180px;
+    left: -110px;
     right: auto;
     z-index: 11;
   }
@@ -2130,7 +2131,7 @@ section.ten {
   section.one .l1 {
     width: 348px;
     bottom: 90px;
-    left: -15px;
+    left: -25px;
     z-index: 6;
   }
 
@@ -2152,9 +2153,8 @@ section.ten {
   }
 
   section.one .l9 {
-    right: -80px;
     width: 520px;
-    bottom: 35px;
+    bottom: 30px;
     z-index: 0;
   }
 
