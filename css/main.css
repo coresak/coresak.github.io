@@ -2130,7 +2130,7 @@ section.ten {
   section.one .l1 {
     width: 348px;
     bottom: 90px;
-    left: 0;
+    left: -15px;
     z-index: 6;
   }
 
