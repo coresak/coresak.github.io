@@ -900,9 +900,8 @@ section.six .container__wrapper {
 section.six .container__wrapper-item {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
   width: 49%;
-  margin-bottom: 50px;
 }
 section.six .container__wrapper-item h5 {
   font-size: 28px;
@@ -987,13 +986,12 @@ section.ten .container__wrapper-item {
   width: 49%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 }
 section.ten .container__wrapper-item:nth-child(2) {
   width: 45%;
+  margin: auto;
   margin-left: auto;
-  margin-bottom: 400px;
-  margin-top: auto;
   background: url("../img/small--map.svg");
   background-size: contain;
   height: 324px;
@@ -1357,7 +1355,7 @@ footer {
   section.six .container__wrapper-item {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     width: 45%;
     margin-bottom: 75px;
     margin-left: 24px;
