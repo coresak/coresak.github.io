@@ -952,6 +952,14 @@ nav ul li:nth-child(4) {
   }
 }
 @media (max-width: 1024px) {
+  .container--index .container--content {
+    margin-bottom: 85px;
+  }
+
+  .index--page .container--content_buttons-item {
+    pointer-events: auto;
+  }
+
   nav .nav--dots {
     display: none;
   }
