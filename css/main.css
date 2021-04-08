@@ -55,9 +55,6 @@ body {
   display: inline-flex;
   position: relative;
 }
-.container--index .container--content_buttons a {
-  text-decoration: none;
-}
 .container--index .container--content_buttons-item-card {
   pointer-events: none;
   opacity: 0;
@@ -109,6 +106,15 @@ body {
   height: 411px;
   border-radius: 8px;
   border: 1px solid #D9D9D9;
+}
+.container--index .container--content_buttons-item a {
+  text-decoration: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 100;
 }
 .container--index .container--content_buttons-item:nth-child(1) {
   margin-right: 40px;
@@ -574,7 +580,7 @@ nav ul li:nth-child(4) {
 
 .container--pads .container--index_dots {
   top: 192px;
-  left: 1183px;
+  left: 77.7%;
   transform: rotate(180deg);
 }
 .container--pads .container--content_footer {
