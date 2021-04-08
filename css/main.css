@@ -55,6 +55,9 @@ body {
   display: inline-flex;
   position: relative;
 }
+.container--index .container--content_buttons a {
+  text-decoration: none;
+}
 .container--index .container--content_buttons-item-card {
   pointer-events: none;
   opacity: 0;

@@ -45,11 +45,3 @@ $('.right').on({
 
     });
 })(jQuery);
-
-const buttonRight = document.getElementById('slideRight');
-const buttonLeft = document.getElementById('slideLeft');
-
-buttonRight.onclick = function () {
-    document.getElementById('mCSB_1_container').positionLeft += 20;
-};
-
