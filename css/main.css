@@ -884,6 +884,15 @@ nav ul li:nth-child(4) {
     line-height: 16px;
   }
 }
+@media (max-width: 1200px) {
+  .container--index .container--content_buttons-item:nth-child(1) {
+    pointer-events: auto;
+  }
+
+  .container--index .container--content {
+    margin-bottom: 85px;
+  }
+}
 @media (max-width: 1440px) {
   .container--pads .container--content-wrapper::before {
     display: none;
