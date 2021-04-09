@@ -20,28 +20,32 @@ $('.right').on({
     }
 });
 
+$('nav ul li:nth-child(4)').on('click', function () {
+    $('.burger').addClass('show');
+});
+
+$('.burger svg').on('click', function () {
+    $('.burger').removeClass('show');
+});
+
 
 // slider
-(function ($) {
-    $(window).on('load', function () {
-        var amount = Math.max.apply(Math, $(".wrapper .item").map(function () {
-            return $(this).outerWidth(true);
-        }).get());
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
 
-        $(".wrapper").mCustomScrollbar({
-            axis: "x",
-            theme: "inset",
-            advanced: {
-                autoExpandHorizontalScroll: true
-            },
-            scrollButtons: {
-                enable: true,
-                scrollType: "stepped"
-            },
-            keyboard: {scrollType: "stepped"},
-            snapAmount: amount,
-            mouseWheel: {scrollAmount: amount}
-        });
-
-    });
-})(jQuery);
+var swiper = new Swiper('.swiper-mobile', {
+    slidesPerView: 'auto',
+    scrollbar: {
+        el: '.swiper-scrollbar',
+        hide: false,
+    },
+});
