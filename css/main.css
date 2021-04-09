@@ -1919,6 +1919,9 @@ nav ul li:nth-child(4) {
 .container--mobile {
   margin-bottom: 60px;
 }
+.container--mobile .swiper-slide {
+  padding-right: 25px;
+}
 .container--mobile .wrapper--info {
   width: 85%;
   margin-left: 25px;
