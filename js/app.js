@@ -49,3 +49,5 @@ var swiper = new Swiper('.swiper-mobile', {
         hide: false,
     },
 });
+
+$(".footer__socials").socialLikes();
