@@ -50,4 +50,12 @@ var swiper = new Swiper('.swiper-mobile', {
     },
 });
 
-$(".footer__socials").socialLikes();
+// wipers text
+// $(window).resize(function () {
+//     if ($(window).width() < 500) {
+//         $(".wipers--br").html("your new header");
+//     }
+//     else {
+//         //
+//     }
+// });
