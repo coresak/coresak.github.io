@@ -209,7 +209,7 @@ nav .nav--dots:before {
   margin: auto;
   content: "";
   height: 1px;
-  width: 95%;
+  width: calc(100% - 50px);
   background: #273339;
   z-index: -1;
 }
@@ -225,14 +225,6 @@ nav .nav--dots span {
   height: 62px;
   width: 62px;
   cursor: pointer;
-}
-nav .nav--dots span:first-child {
-  width: 31px;
-  justify-content: flex-start;
-}
-nav .nav--dots span:last-child {
-  width: 31px;
-  justify-content: flex-end;
 }
 nav .nav--dots span:hover {
   background-image: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9.5' cy='9.5' r='8.5' fill='%23273339' stroke='white' stroke-width='2'/%3E%3C/svg%3E%0A");
@@ -1060,10 +1052,6 @@ nav ul li:nth-child(4) {
   }
 }
 @media (max-width: 1440px) {
-  nav .nav--dots::before {
-    width: 95%;
-  }
-
   .container--pads .container--content-wrapper::before {
     display: none;
   }
