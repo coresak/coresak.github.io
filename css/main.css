@@ -1415,6 +1415,13 @@ nav ul li:nth-child(4) {
     margin-bottom: 23px;
     order: -1;
     width: 80%;
+    justify-content: center;
+  }
+  .footer--item:nth-child(2) a {
+    margin-right: 30px;
+  }
+  .footer--item:nth-child(2) a:last-child {
+    margin-right: 0;
   }
 
   .footer--item:nth-child(3),
