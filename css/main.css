@@ -235,11 +235,13 @@ nav .nav--dots span:hover {
   background-size: 22px;
 }
 nav .nav--dots span:hover a {
+  pointer-events: initial;
   z-index: 100;
   opacity: 1;
-  top: 20px;
+  top: 14px;
 }
 nav .nav--dots span a {
+  pointer-events: none;
   white-space: nowrap;
   text-decoration: none;
   position: absolute;
@@ -248,7 +250,7 @@ nav .nav--dots span a {
   padding-top: 30px;
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19px;
   text-align: center;
   text-transform: uppercase;
