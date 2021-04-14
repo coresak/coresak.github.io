@@ -329,6 +329,18 @@ nav ul li:nth-child(4) {
   min-height: 87px;
   border-top: 2px solid #CCCCCC;
 }
+.footer .media--footer {
+  display: none;
+  color: #273339;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer .media--footer h6 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
 .footer .footer--item_qa {
   font-size: 16px;
   line-height: 16px;
@@ -1804,6 +1816,10 @@ nav ul li:nth-child(4) {
   }
 }
 @media (max-width: 650px) {
+  .footer .media--footer {
+    display: block;
+  }
+
   .container--economy .container--content_main h5 {
     margin: 0;
     margin-bottom: 40px;
@@ -2003,7 +2019,13 @@ nav ul li:nth-child(4) {
   }
 
   .footer--item:nth-child(1) {
-    margin-bottom: 20px;
+    display: none;
+  }
+
+  .footer--item:nth-child(3) a {
+    display: inline-block;
+    border-bottom: 1px solid;
+    margin-top: 5px;
   }
 
   .footer--item:nth-child(2) {
@@ -2025,6 +2047,7 @@ nav ul li:nth-child(4) {
   .footer--item:nth-child(3) .footer--item_qa {
     width: 100%;
     text-align: center;
+    margin: 0 !important;
   }
 
   .footer--item:nth-child(3) .links--items:nth-child(2) {
