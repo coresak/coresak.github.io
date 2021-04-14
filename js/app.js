@@ -1,5 +1,4 @@
 // mousein - hover
-
 $('.left').on({
     'mouseenter': () => {
         $('.left').next('.container--content_buttons-item-card').addClass('show');
@@ -20,7 +19,7 @@ $('.right').on({
     }
 });
 
-$('nav ul li:nth-child(4)').on('click', function () {
+$('.burger--button').on('click', function () {
     $('.burger').addClass('show');
 });
 
@@ -29,33 +28,48 @@ $('.burger svg').on('click', function () {
 });
 
 
-// slider
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 'auto',
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        hide: false,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
+
+// document ready functions
+$(document).ready(function () {
+    $("body").children().each(function () {
+        $(this).html($(this).html().replace(/&#8232;/g, " "));
+    });
+
+    $('.burger--button').on('click', function () {
+        $('.burger').addClass('show');
+    });
+
+    $('.burger svg').on('click', function () {
+        $('.burger').removeClass('show');
+    });
+
+    // slider
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 'auto',
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            hide: false,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    var swiper = new Swiper('.swiper-mobile', {
+        slidesPerView: 'auto',
+        scrollbar: {
+            el: '.swiper-scrollbar',
+            hide: false,
+        },
+    });
+
 });
 
-var swiper = new Swiper('.swiper-mobile', {
-    slidesPerView: 'auto',
-    scrollbar: {
-        el: '.swiper-scrollbar',
-        hide: false,
-    },
-});
-
-// wipers text
-// $(window).resize(function () {
-//     if ($(window).width() < 500) {
-//         $(".wipers--br").html("your new header");
-//     }
-//     else {
-//         //
-//     }
-// });
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 10) {
+        $('nav').addClass('scroll');
+    } else {
+        $('nav').removeClass('scroll');
+    }
+})
