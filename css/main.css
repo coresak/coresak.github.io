@@ -1818,6 +1818,18 @@ nav ul li:nth-child(4) {
   }
 }
 @media (max-width: 650px) {
+  .bottom--link {
+    margin-top: 0;
+  }
+
+  .container--pads .container--content_footer {
+    margin-top: 45px;
+  }
+
+  .wrapper--slider_container {
+    height: 420px;
+  }
+
   .footer .media--footer {
     display: block;
   }
