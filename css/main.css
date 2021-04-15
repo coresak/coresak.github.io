@@ -2069,7 +2069,7 @@ nav ul li:nth-child(4) {
     }
 
     .wipers {
-        font-size: 5.4vw !important;
+        font-size: 7.2vw !important;
     }
 
     .container--pads .container--content_footer img {
@@ -2141,10 +2141,6 @@ nav ul li:nth-child(4) {
 
     .container--pads .container--content .container--content_main h1 span {
         font-size: 10.6vw;
-    }
-
-    .container--pads .container--content .container--content_main h1 .wipers {
-        white-space: nowrap;
     }
 
     .container--pads .container--content_info-border {
@@ -2306,9 +2302,6 @@ nav ul li:nth-child(4) {
 }
 
 @media (max-width: 330px) {
-    .container--pads .container--content .container--content_main h1 span {
-        font-size: 5vw !important;
-    }
 
     .wiper--text {
         margin-top: 0 !important;
